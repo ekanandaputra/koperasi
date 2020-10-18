@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">KoperasiUser</string>
+    <string name="username">Username</string>
+    <string name="join_chat">Join Chat</string>
+    <string name="send">Send</string>
+    <string name="enter_message">Enter message…</string>
+    <string name="appID">2204588e4a905c0</string>
+    <string name="apiKey">f48fd33e8e01bd3293e2101fbdf404335afaa621</string>
+    <string name="region">eu</string>
+</resources>

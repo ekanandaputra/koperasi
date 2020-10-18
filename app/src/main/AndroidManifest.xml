@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.KoperasiUser">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Menu.ListTabunganActivity"></activity>
+        <activity android:name=".Menu.RiwayatActivity" />
+        <activity android:name=".Menu.ListPeriodeActivity" />
+        <activity android:name=".SimulasiActivity" />
+        <activity android:name=".Menu.InfoActivity" />
+        <activity android:name=".Menu.ProfileActivity" />
+        <activity android:name=".Menu.ListAngsuranActivity" />
+        <activity android:name=".Menu.TambahSaldoActivity" />
+        <activity android:name=".Menu.TabunganActivity" />
+        <activity android:name=".Menu.NotifikasiActivity" />
+        <activity android:name=".Menu.PeminjamanActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".Menu.MessagesActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

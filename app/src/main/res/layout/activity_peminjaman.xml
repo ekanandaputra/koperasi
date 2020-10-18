@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Menu.PeminjamanActivity">
+
+    <LinearLayout
+        android:background="@drawable/bg_box"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/warnaHitam"
+            android:text="FORM PEMINJAMAN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/warnaHitam"
+            android:text="Nominal yang Akan Dipinjam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:id="@+id/edNominal"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/bg_edlogin"
+            android:drawablePadding="16dp"
+            android:drawableLeft="@drawable/ic_user"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:hint="Nominal"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+
+
+        <LinearLayout
+            android:layout_marginHorizontal="20dp"
+            android:orientation="horizontal"
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center_vertical"
+                android:textColor="@color/warnaHitam"
+                android:text="Jumlah Angsuran"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <Spinner
+                android:id="@+id/spinnerCicilan"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_marginRight="20dp"
+            android:textColor="@color/warnaPutih"
+            android:textSize="17dp"
+            android:layout_gravity="end"
+            android:layout_width="130dp"
+            android:background="@drawable/costum_button"
+            android:layout_height="35dp"
+            android:id="@+id/btSimulasi"
+            android:text="Simulasi "
+            android:textAllCaps="false"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="-40dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:textSize="20dp"
+                        android:layout_marginVertical="30dp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/warnaPutih"
+                        android:text="SIMULASI CICILAN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@color/warnaPutih"
+                            android:text="Nominal"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:textAlignment="textEnd"
+                            android:id="@+id/tvNominal"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@color/warnaPutih"
+                            android:text="Nominal"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@color/warnaPutih"
+                            android:text="Biaya Admin"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:textAlignment="textEnd"
+                            android:id="@+id/tvAdmin"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@color/warnaPutih"
+                            android:text="Nominal"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@color/warnaPutih"
+                            android:text="Cicilan /bulan"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:textAlignment="textEnd"
+                            android:id="@+id/tvCicilan"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@color/warnaPutih"
+                            android:text="Nominal"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@color/warnaPutih"
+                            android:text="Total Cicilan"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:textAlignment="textEnd"
+                            android:id="@+id/tvTotal"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:textColor="@color/warnaPutih"
+                            android:text="Nominal"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/warnaHitam"
+                        android:textSize="17dp"
+                        android:layout_width="match_parent"
+                        android:background="@color/warnaPutih"
+                        android:layout_height="35dp"
+                        android:id="@+id/btAjukan"
+                        android:text="Ajukan Peminjaman"
+                        android:textAllCaps="false"/>
+
+                 </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
